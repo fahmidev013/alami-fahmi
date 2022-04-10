@@ -41,7 +41,7 @@ function TambahProduk() {
           <ul className="wrapper">
             <li className="form-row">
               <label htmlFor="id_penjual">ID Penjual :</label>
-              <input type="number" id="id" />
+              <input type="number" id="id_penjual" />
             </li>
             <li className="form-row">
               <label htmlFor="nama_produk">Nama Produk :</label>
