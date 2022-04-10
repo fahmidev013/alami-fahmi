@@ -20,7 +20,7 @@ exports[`Tambah Produk Component should render correctly 1`] = `
             ID Penjual :
           </label>
           <input
-            id="id"
+            id="id_penjual"
             type="number"
           />
         </li>
