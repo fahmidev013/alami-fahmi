@@ -8,7 +8,7 @@
 ### Instalasi Paket Dependency
 
 Melalui perintah console, jalankan perintah :
-> cd 'root directory project'
+> cd 'root directory project' <br />
 > npm install
 
 ### Running Aplikasi
