@@ -1,39 +1,244 @@
-.App {
-  text-align: center;
+
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout {
+  height: 100vh;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background: #f0f2f5;
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.ant-layout-header {
+  background-color: #009879;
 }
 
-.App-header {
-  min-height: 100vh;
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  color: #fff;
+  background: #009879;
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background: #008679;
+}
+
+.ant-menu-item-selected {
+  background: #008679 !important;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: #009879 !important;
+  background: #009879 !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.ant-btn-primary:hover {
+  background: #005c53 ;
+}
+
+.ant-input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+  overflow: hidden;
+}
+
+*:focus {
+  outline-color: #005c53;
+}
+
+
+.inputForm {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.inputForm label {
+  margin: 2px 6px 2px 0;
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum', "tnum";
+}
+.inputForm input {
+  margin: 5px 10px 5px 0;
+  padding: 4px;
+  padding: .5em;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  min-width: 20%;
+  
+}
+.inputForm button {
+  padding: 6px 10px;
+  font-size: 1em;
+  background-color: #009879;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 4px;
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum', "tnum";
+  min-width: 90px;
+}
+.inputForm button:hover {
+  background-color: #008579;
+}
+
+
+.tab {
+  min-height: 30px;
+  border: 1px solid #ccc;
+  background-color: #008579;
+}
+
+.tab button {
+  background-color: inherit;
+  color: #fff;
+  float: left;
+  border: 0.2px white dashed;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f2f2f2;
+  color: #009879;
+}
+
+
+.activenav button {
+  color: #f2f2f2;
+  background-color: #00c9a1;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  flex: 1;
+  background-color: #f2f2f2;
+  height: calc(100% - 20px);
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.footer {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0px;
+  background-color: #008579;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.wrapper {
+  list-style-type: none;
+  padding: 25px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
 }
+.form-row {
+  padding: .5em;
+  display: flex;
+  min-width: 34%;
+  margin-right: 30%;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+  flex: 1;
+  text-align: right;
+}
+.form-row > input, .form-row > textarea {
+  flex: 2;
+  max-width: 150px;
+  min-width: 150px;
+}
+.form-row > input,
+.form-row > button,
+.form-row > textarea {
+  padding: .5em;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  margin-right: 20%;
+}
+.form-row > button {
+ background-color: #009879;
+ color: white;
+ margin-left: auto;
+ min-width: 250px;
+}
+
+.form-row > button:hover {
+  background-color: whitesmoke;
+  color: #009879;
+  transition: 0.3s;
+  outline: none;
+  cursor: pointer;
+ }
+
+ .search-container > button {
+  background-color: #009879;
+  color: white;
+  margin-left: .7rem;
+  font-variant: tabular-nums;
+  font-feature-settings: 'tnum', "tnum";
+  min-width: 60px;
+  padding: .4rem 1.9rem !important;
+ }
+
+ .search-container > input, .search-container > button {
+  padding: .5em;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.search-container > input {
+  min-width: 20%;
+}
+

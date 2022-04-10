@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tambah Produk Component should render correctly 1`] = `
+<Fragment>
+  <div
+    className="site-layout-content"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <ul
+        className="wrapper"
+      >
+        <li
+          className="form-row"
+        >
+          <label
+            htmlFor="id_penjual"
+          >
+            ID Penjual :
+          </label>
+          <input
+            id="id"
+            type="number"
+          />
+        </li>
+        <li
+          className="form-row"
+        >
+          <label
+            htmlFor="nama_produk"
+          >
+            Nama Produk :
+          </label>
+          <input
+            id="nama_produk"
+            type="text"
+          />
+        </li>
+        <li
+          className="form-row"
+        >
+          <label
+            htmlFor="satuan"
+          >
+            Satuan Produk :
+          </label>
+          <input
+            id="satuan"
+            type="text"
+          />
+        </li>
+        <li
+          className="form-row"
+        >
+          <label
+            htmlFor="harga_satuan"
+          >
+            Harga Satuan :
+          </label>
+          <input
+            id="harga_satuan"
+            type="number"
+          />
+        </li>
+        <li
+          className="form-row"
+        >
+          <label
+            htmlFor="deskripsi"
+          >
+            Deskripsi :
+          </label>
+          <textarea
+            id="deskripsi"
+          />
+        </li>
+        <li
+          className="form-row"
+        >
+          <button
+            type="submit"
+          >
+            Simpan
+          </button>
+        </li>
+      </ul>
+    </form>
+  </div>
+  <ModalComponent
+    onConfirm={[Function]}
+    type={
+      Object {
+        "content": "",
+        "isSuccess": false,
+        "title": "",
+      }
+    }
+    visible={false}
+  />
+</Fragment>
+`;

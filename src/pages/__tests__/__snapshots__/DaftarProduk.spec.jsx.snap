@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Daftar Produk Component should render with data correctly 1`] = `
+<div
+  className="site-layout-content"
+>
+  <form
+    className="inputForm"
+    onSubmit={[Function]}
+  >
+    <input
+      id="sellerId"
+      name="sellerId"
+      placeholder="Ketik ID Seller"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Filter
+    </button>
+       
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </form>
+  <div
+    style={
+      Object {
+        "maxHeight": "65vh",
+        "overflow": "scroll",
+      }
+    }
+  >
+    <TableComponent
+      data={
+        Array [
+          Object {
+            "deskripsi": "Alpukat Mentega",
+            "hargaSatuan": 35000,
+            "id": 25,
+            "key": 25,
+            "nama": "Alpukat",
+            "satuan": "kg",
+            "sellerId": 65,
+          },
+          Object {
+            "deskripsi": "Balsem Oles",
+            "hargaSatuan": 2000,
+            "id": 31,
+            "key": 31,
+            "nama": "Balsem",
+            "satuan": "botol",
+            "sellerId": 65,
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;
